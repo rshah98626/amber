@@ -1,4 +1,4 @@
-import NFTItem from "../NFTItem";
+import NFTItem from "../nftDisplay/NFTItem";
 
 const Gallery = () => {
   return (
