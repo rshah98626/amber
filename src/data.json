@@ -1,9 +1,34 @@
 [
   {
+    "id": "1",
     "physicalImageLink": "https://verilink.mypinata.cloud/ipfs/QmQ5LVdw8RH9he4b7bjoK1wis8DqsztQVkQjZDnniQ7foE",
-    "name": "Time to Gogh #1",
+    "title": "Time to Gogh #1",
     "artist": "Lisa Elley",
-    "price": "100",
+    "ethPrice": 100,
     "digitalImageLink": "https://verilink.mypinata.cloud/ipfs/QmQShDSrVZ76Ba4hDKN2V1ghLy3jqCrGw3A8YxbRa4THPr"
+  },
+  {
+    "id": "2",
+    "physicalImageLink": "https://verilink.mypinata.cloud/ipfs/QmQ5LVdw8RH9he4b7bjoK1wis8DqsztQVkQjZDnniQ7foE",
+    "title": "Time to Gogh #1",
+    "artist": "Lisa Elley",
+    "ethPrice": 100,
+    "digitalImageLink": "https://verilink.mypinata.cloud/ipfs/QmQShDSrVZ76Ba4hDKN2V1ghLy3jqCrGw3A8YxbRa4THPr"
+  },
+  {
+    "id": "3",
+    "physicalImageLink": "https://verilink.mypinata.cloud/ipfs/QmYzyFjRzNFxbVhygeeYeg3AkpfgG2C3BkpaRE8M8f1fM8",
+    "title": "Foreverandever #10",
+    "artist": "Michael Carini",
+    "ethPrice": 200,
+    "digitalImageLink": "https://public.verilink.technology/previewMedia/prod/0x11cf4229a6def9a23eb77b396dde54be4591ced5/10/animation_320px.mp4"
+  },
+  {
+    "id": "4",
+    "physicalImageLink": "https://verilink.mypinata.cloud/ipfs/QmTunVgvgQghC1hBode8UdzqEk7YmrQYXhd339Jph6SbbY",
+    "title": "Breaking The Cycle - Verilink Physical NFT",
+    "artist": "Michael Carini",
+    "ethPrice": 50,
+    "digitalImageLink": "https://public.verilink.technology/previewMedia/prod/0x9256ab9e81e1539143d024f433d027e7f58a5ac9/1/animation_320px.mp4"
   }
 ]

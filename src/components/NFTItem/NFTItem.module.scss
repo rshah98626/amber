@@ -1,0 +1,18 @@
+.video {
+  filter: opacity(0.9) brightness(0.8);
+}
+
+.caption {
+  position: absolute;
+  bottom: 1rem;
+  margin-left: 1rem;
+  color: white;
+  margin-right: 1rem;
+  text-align: center;
+  left: 0;
+  background: rgb(105, 103, 103);
+  right: 0;
+  border-radius: 2rem;
+  opacity: 0.8;
+  font-size: medium;
+}
