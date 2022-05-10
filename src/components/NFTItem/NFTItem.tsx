@@ -2,19 +2,27 @@ import styles from "./NFTItem.module.scss";
 import { Container, Row, Col } from "react-bootstrap";
 import { useState } from "react";
 import { NFTItemProps } from ".";
+import { useNavigate } from "react-router-dom";
 
 const NFTItem = (props: { data: NFTItemProps }) => {
   const [isHovering, setIsHovering] = useState(false);
+  const navigate = useNavigate();
+
+  const handleClick = (data: NFTItemProps) => {
+    navigate("/item/", { state: data });
+  };
   return (
     <div
       onMouseOver={() => setIsHovering(true)}
       onMouseOut={() => setIsHovering(false)}
+      onClick={() => handleClick(props.data)}
     >
       {isHovering ? (
         <NFTVideo data={props.data} />
       ) : (
         <NFTImage data={props.data} />
       )}
+      ]
     </div>
   );
 };
