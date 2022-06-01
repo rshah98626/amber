@@ -22,7 +22,6 @@ const NFTItem = (props: { data: NFTItemProps }) => {
       ) : (
         <NFTImage data={props.data} />
       )}
-      ]
     </div>
   );
 };
