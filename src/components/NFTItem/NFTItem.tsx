@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { useState } from "react";
 import { NFTItemProps } from ".";
 import { useNavigate } from "react-router-dom";
+import NFTImage from "./Image/NFTImage";
 
 const NFTItem = (props: { data: NFTItemProps }) => {
   const [isHovering, setIsHovering] = useState(false);
@@ -20,21 +21,17 @@ const NFTItem = (props: { data: NFTItemProps }) => {
       {isHovering ? (
         <NFTVideo data={props.data} />
       ) : (
-        <NFTImage data={props.data} />
+        <NFTImageWithCaption data={props.data} />
       )}
     </div>
   );
 };
 
-const NFTImage = (props: { data: NFTItemProps }) => {
+const NFTImageWithCaption = (props: { data: NFTItemProps }) => {
   const { title, artist, ethPrice, physicalImageLink } = props.data;
   return (
     <figure className="position-relative">
-      <img
-        className="img-fluid"
-        src={physicalImageLink}
-        alt="what the nft looks like in real life"
-      />
+      <NFTImage imageLink={physicalImageLink} />
       <figcaption className={styles.caption}>
         <Container>
           <Row>
