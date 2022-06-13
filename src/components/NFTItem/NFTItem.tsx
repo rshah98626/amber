@@ -19,7 +19,7 @@ const NFTItem = (props: { data: NFTItemProps }) => {
       onClick={() => handleClick(props.data)}
     >
       {isHovering ? (
-        <NFTVideo data={props.data} />
+        <NFTVideo videoLink={props.data.digitalImageLink} />
       ) : (
         <NFTImageWithCaption data={props.data} />
       )}
@@ -53,8 +53,8 @@ const NFTImageWithCaption = (props: { data: NFTItemProps }) => {
   );
 };
 
-const NFTVideo = (props: { data: NFTItemProps }) => {
-  const { digitalImageLink } = props.data;
+const NFTVideo = (props: { videoLink: string }) => {
+  // const { digitalImageLink } = props.data;
   return (
     <video
       className={`img-fluid ${styles.video}`}
@@ -64,7 +64,7 @@ const NFTVideo = (props: { data: NFTItemProps }) => {
       muted
       loop
     >
-      <source src={digitalImageLink}></source>
+      <source src={props.videoLink}></source>
     </video>
   );
 };
